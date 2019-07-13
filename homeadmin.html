@@ -2,16 +2,20 @@
 <html>
 <head>
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="index.css" rel="stylesheet">
   <meta charset="utf-8" />
   <link rel="icon" type="image/png" href="assets/paper_img/favicon.ico">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
   <title>Education</title>
   <style>
-  
+div.buttonSubmit input, div.buttonSubmit span {
+
+margin-left: 50px;
+}  
 body { 
   /* The image used */
-  background-image: url("download.jpeg");
+  background-image: url("bg.jpeg");
 
 
   height: 100%; 
@@ -52,6 +56,24 @@ img.bg {
 
 </head>
 <body>
+<div class="header">
+            <div class="inner-header">
+            <div class="header-link"><a href="#">Logout</a></div>
+                <div class="row">
+                
+                        <div class="col-md-8 col-md-offset-2">
+                            <br> <br>                   
+                            <button href="addcontent.html" class="btn btn-primary" style="width:300px">Add content</button><br><br>
+                            <button href="#fakelink" class="btn btn-info" style="width:300px">Analytics</button><br><br>
+                            <button href="#fakelink" class="btn btn-success" style="width:300px">List of requests</button><br><br>
+                            <button href="#fakelink" class="btn btn-warning" style="width:300px">Add school</button><br><br>
+                            <button href="#fakelink" class="btn btn-primary" style="width:300px">Requests confirmation</button><br>
+                            
+                    </div>
+            </div>
+        </div>
+
+
 <nav class="navbar navbar-ct-transparent" role="navigation-demo" id="demo-navbar">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -64,9 +86,9 @@ img.bg {
       </button>
       <a href="C:\Users\DELL\Desktop\websample">
            <div class="logo-container">
-                <div class="logo">
+                <!--<div class="logo">
                     <img src="download.jpg" alt="Creative Tim Logo" class="bg">
-                </div>
+                </div>-->
                 
             </div>
       </a>
@@ -96,17 +118,7 @@ img.bg {
             <div id="buttons">
                     <div class="tim-title">
                     </div>
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                        <div >                            
-                            <button href="#fakelink" class="btn btn-primary">Add content</button>
-                            <button href="#fakelink" class="btn btn-info">Analytics</button>
-                            <button href="#fakelink" class="btn btn-success">List of requests</button>
-                            <button href="#fakelink" class="btn btn-warning">Add school</button>
-                            <button href="#fakelink" class="btn btn-primary">Requests confirmation</button>
-                        </div>
-                        </div>
-                    </div>
+                    
                     <br />         
             </div>
     </div>
