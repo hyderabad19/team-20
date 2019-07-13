@@ -1,5 +1,10 @@
 <?php
-include 'dp.php';?>
+include 'db.php';
+//include 'register.php';
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,9 +27,9 @@ include 'dp.php';?>
             <div class="container">
                 <div class="signup-content">
                     <div class="signup-form">
-                    	<form action="login.html">
+                    	<form action="register.php">
 	                        <h2 class="form-title">Sign up</h2>
-	                        <form method="POST" class="register-form" id="register-form">
+	                        <form method="GET" class="register-form" id="register-form" >
 	                            <div class="form-group">
 	                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
 	                                <input type="text" name="name" id="name" placeholder="Your Name"  required>
@@ -52,10 +57,10 @@ include 'dp.php';?>
 	                                <!-- <input type="text" name="schoolname" id="schoolname" placeholder="School Name"/> -->
 	                                     <strong>school-name  :</strong>  <select name="school">
 	                                  	<option value="select-school">select-school</option>
-									    <option value="Gowtham model school">Gowtham model school</option>
-									    <option value="vignan high school">vignan high school</option>
+									    <option value="Gowtham model school,hyd,21">Gowtham model school</option>
+									    <option value="vignan high school,sec,22">vignan high school</option>
 									    <!-- <option value="fiat">Fiat</option> -->
-									    <option value="gurkul international school">gurkul international school</option>
+									    <option value="gurkul international school,nzd,23">gurkul international school</option>
 									  </select>
 	                                <!-- <ul class="dropdown-menu">
 								      <li><a href="#">Gowtham model school</a></li>
