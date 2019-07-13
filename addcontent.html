@@ -11,8 +11,8 @@
     body { 
   /* The image used */
   height: 100%; 
-  background-image: url("download.jpeg");
- background-color: black ;
+  /*background-image: url("download.jpeg");*/
+ background-color: #cccccc;
   /* Center and scale the image nicely 
   background-position: center;
   background-repeat: no-repeat;*/
@@ -21,18 +21,26 @@
     </style>
 </head>
 <body>
-	<center><img src="./download.jpg" style="width:150px;height:150px;border-radius: 0px;margin-top: 20px;"/><br></center>
+	<center><br></center>
 <div class="forms">
 	
 	<div action="#" id="login">
 	      <div id="login_div" class="input-field">
-	        <label for="email">Content type</label>
-	        <input type="email" name="email" required="email" id="email"/><br>
+	      <label for="email">Content type</label>
+	        
+	       <select name = "dropdown" style="width:500px"
+	       style="height:500px" >
+            <option value = "Data Structures" selected>Text</option>
+            <option value = "Data Mining">Image</option>
+            <option value = "Data Mining">Video</option>
+
+         </select>
+	        
 	        <label for="password">Content description</label> 
 	        <input type="password" name="password" required="password" id="password"/>
 	        <label for="email">Category</label>
 	        <input type="email" name="email" required="email" id="email"/><br>
-	        <input type="file" name="fileToUpload" id="fileToUpload"><br>
+	        <input type="file" style="width:500px" name="fileToUpload" id="fileToUpload"><br>
 	        <input type="submit" value="add the details" class="button" onclick="signin()" /><br><br>
 	        <center><p style="color:#444;letter-spacing: 1.5px;font-size:17px;font-family: 'Open Sans', sans-serif;">
 	        </center>
