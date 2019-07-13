@@ -56,11 +56,10 @@ include 'db.php';
 	                                <!-- <label for="schoolname"><i class="zmdi zmdi-home"></i></label> -->
 	                                <!-- <input type="text" name="schoolname" id="schoolname" placeholder="School Name"/> -->
 	                                     <strong>school-name  :</strong>  <select name="school">
-	                                  	<option value="select-school">select-school</option>
-									    <option value="Gowtham model school,hyd,21">Gowtham model school</option>
-									    <option value="vignan high school,sec,22">vignan high school</option>
+	                                  	<option value="Gowtham model school">Gowtham model school,hyderabad,333</option>
+									    <option value="vignan high school">vignan high school,vikarabad,444</option>
 									    <!-- <option value="fiat">Fiat</option> -->
-									    <option value="gurkul international school,nzd,23">gurkul international school</option>
+									    <option value="gurkul international school">gurkul international school,warangal,111</option>
 									  </select>
 	                                <!-- <ul class="dropdown-menu">
 								      <li><a href="#">Gowtham model school</a></li>
