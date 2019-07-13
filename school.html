@@ -1,17 +1,33 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"></head><body>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel = "stylesheet" type = "text/css" href = "style.css">
+<style>
+body{
+height: 100%; 
+  
+
+ background-image: url("photo.jpg");
+ /*background-position: center;*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: auto;*/
+}
+</style>
+</head>
+<body>
 <div>
 
 <div>
-  <form action="http:///action_page.php" target="_blank" onsubmit="try {return window.confirm(&quot;This form may not function properly due to certain security constraints.\nContinue?&quot;);} catch (e) {return false;}">
-    School Name:
-    <div>
-      <input type="text" name="text2">
-    </div>
-    School Address:
-    <div>
-      <input type="text" name="text2">
-    </div>
-    <button type="submit">Submit</button>
+  	<center style="width:150px;height:150px;border-radius: 0px;margin-top: 20px;"/><br></center>
+<div class="forms">
+	
+    <label for="password">School Name</label> 
+	        <input type="password" name="password" style="border-color:black" required="password" id="password"/>
+	        <label for="email">School address</label>
+	        <input type="email" name="email" style="border-color:black" required="email" id="email"/><br>
+	        <input type="submit" value="Submit" class="button" onclick="signin()" /><br>
+    
   </form>
 </div>
 
