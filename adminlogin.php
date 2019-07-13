@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 <?php
 include 'dp.php';?>
-=======
->>>>>>> b623bd54cc3c02d17caab41bc54294eaa1ae059a
 <!DOCTYPE html>
 <html>
 <head>
@@ -39,39 +36,26 @@ include 'dp.php';?>
 		<div class="container-login100" style="background-image: url('images/bg-1.jpg');">
 			<div class="wrap-login100 p-t-30 p-b-50">
 				<span class="login100-form-title p-b-41">
-					Account Login
+					Admin Login
 				</span>
-<<<<<<< HEAD
-				<form class="login100-form validate-form p-b-33 p-t-5"  action="teachlogin.php" method="GET">
-=======
-				<form class="login100-form validate-form p-b-33 p-t-5">
-					<form type="POST">
->>>>>>> b623bd54cc3c02d17caab41bc54294eaa1ae059a
+				<form class="login100-form validate-form p-b-33 p-t-5"  action="login.php" method="GET">
 						<div class="wrap-input100 validate-input" data-validate = "Enter username">
-							<input class="input100" type="email" name="Email" placeholder="Email" required>
+							<input class="input100" type="email" name="Email1" placeholder="Email" required>
 							<span class="focus-input100" data-placeholder="&#xe82a;"></span>
 						</div>
 
 						<div class="wrap-input100 validate-input" data-validate="Enter password">
-							<input class="input100" type="password" name="pass" placeholder="Password"  required>
+							<input class="input100" type="password" name="pass1" placeholder="Password"  required>
 							<span class="focus-input100" data-placeholder="&#xe80f;"></span>
 						</div>
 
 						<div class="container-login100-form-btn m-t-32">
 							<input  type="submit" value="Login" name="login" id="login" class="btn btn-primary">
 						</div>
-<<<<<<< HEAD
-=======
-					</form>
->>>>>>> b623bd54cc3c02d17caab41bc54294eaa1ae059a
 
 				</form >
 			</div>
 		</div>
 	</div>
 </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> b623bd54cc3c02d17caab41bc54294eaa1ae059a
