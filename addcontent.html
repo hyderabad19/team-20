@@ -6,44 +6,35 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel = "stylesheet" type = "text/css" href = "style.css">
-    
     <style>
     body { 
-  /* The image used */
   height: 100%; 
-  /*background-image: url("download.jpeg");*/
- background-color: #cccccc;
-  /* Center and scale the image nicely 
-  background-position: center;
-  background-repeat: no-repeat;*/
+  background-image: url("download.jpeg");
+ background-color: black ;
   background-size: auto;
 }
     </style>
 </head>
 <body>
-	<center><br></center>
+	<center><img src="./download.jpg" style="width:150px;height:150px;border-radius: 0px;margin-top: 20px;"/><br></center>
 <div class="forms">
 	
-	<div action="#" id="login">
-	        
- <label for="password">Content type</label> 
-	        <input type="password" name="password" required="password" id="password"/>
-	        
-	        <label for="password">Content description</label> 
-	        <input type="password" name="password" required="password" id="password"/>
-	        <label for="email">Category</label>
-	        <input type="email" name="email" required="email" id="email"/><br>
-	        <input type="file" style="width:500px" name="fileToUpload" id="fileToUpload"><br>
-	        <input type="submit" value="add the details" class="button" onclick="signin()" /><br><br>
+	
+		<form action="upload.php" method="POST">
+	      
+	        <label >Content type</label>
+	        <input type="text" name="type"/><br>
+	        <label >Content description</label> 
+	        <input type="text" name="context" />
+	        <label >Category</label>
+	        <input type="text" name="category"/><br>
+	        <input type="file" name="image" id="fileToUpload"><br>
+	        <input type="submit" value="add the details" class="button"/><br><br>
+	        </form>
 	        <center><p style="color:#444;letter-spacing: 1.5px;font-size:17px;font-family: 'Open Sans', sans-serif;">
 	        </center>
-	      </div>
-	  </div>
-	  <div action="#" id="signup">
-</select>    
-	        <input type="submit" value="Add the details" onclick="signup()" class="button" />
-	      </div>
-	  </div>
+	  
 </div>
+
 </body>
 </html>

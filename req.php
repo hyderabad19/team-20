@@ -1,7 +1,6 @@
-//this is req.php
 <?php
 session_start();
-$uname=$_SESSION['uname'];
+$uname=$_SESSION['uid'];
 $query1=mysqli_query($connection,"select uid from users where uname='$uname'");
 while ($row1 = mysqli_fetch_array($query1)) {
 

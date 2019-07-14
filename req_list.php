@@ -19,7 +19,3 @@ while ($row1 = mysqli_fetch_array($query1)) {
 </div>
 </body>
 </html>
-<?php
-}
-}
-?>

@@ -72,6 +72,7 @@ fieldset {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+
 }
 
 /* Float four columns side by side */
@@ -79,6 +80,7 @@ body {
   float: left;
   width: 25%;
   padding: 0 10px;
+  color:black;
 }
 
 /* Remove extra left and right margins, due to padding */
@@ -89,6 +91,10 @@ body {
   content: "";
   display: table;
   clear: both;
+}
+
+a{
+  color: black;
 }
 
 /* Responsive columns */
@@ -120,33 +126,41 @@ body {
   <div class="column">
     <div class="card">
     <br>
-      <h3>Card 1</h3>
-      <p>Some text</p>
-      <p>Some text</p>
+      <a href="likes_analysis.php">
+      <h3>Analysis of content</h3>
+      <p>Analysis Of</p>
+      <p>Likes</p>
+    </a>
     </div>
   </div>
 
   <div class="column">
     <div class="card"><br>
-      <h3>Card 02</h3>
-      <p>Some text</p>
-      <p>Some text</p>
+      <a href="likes_analysis.php">
+      <h3>Quality of Content</h3>
+      <p>Analysis of</p>
+      <p>Comments</p>
+    </a>
     </div>
   </div>
   
   <div class="column">
+    
     <div class="card"><br>
-      <h3>Card 3</h3>
-      <p>Some text</p>
-      <p>Some text</p>
+      <a href="time_analysis.php">
+      <h3>Time Analytics</h3>
+      <p>Time utilized in interval</p>
+      <p>Analysis</p>
+      </a>
     </div>
+  
   </div>
   
   <div class="column">
     <div class="card"><br>
-      <h3>Card 4</h3>
-      <p>Some text</p>
-      <p>Some text</p>
+      <h3>Any Other Analysis...</h3>
+      <p>Context</p>
+      <p>Context</p>
     </div>
   </div>
 </div>

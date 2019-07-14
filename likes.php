@@ -1,20 +1,59 @@
 <?php
-include 'db.php'
+//include 'header.php';
+include 'db1.php';
 session_start();
-$email=$_SESSION["email"];
-$pass=$_SESSION["role"];
+$conn=new mysqli($url, $user, $password, $db);
 
-$did1=$_POST['did'];
-$query1=mysqli_query($connection,"select count from like where did='$did1'");
-while ($row1 = mysqli_fetch_array($query1)) {
 
-$count=$row1['count']+1;
+//$uid=$_SESSION['uid'];
+
+$data="select * from upload_data order by time DESC";
+
+$did=$_GET['did'];
+
+echo $did;
+//echo "hii";
+
+if(($data1=$conn->query($data))== false)
+{
+    echo $conn->error;
 }
-//$sql="SELECT count from likes where did=$did1;"
-$sql1="UPDATE likes SET count=$count where did=$did1; "
-$result = mysqli_query($db,$sql);
-$result1 = mysqli_query($db,$sql1);
-if(!$result1){
-  			$error="Unable to like or refresh likes!";
-  		}
+
+if($data1->num_rows)
+{
+    while($row=$data1->fetch_assoc())
+    {
+        $did=$row['did'];
+        $likes1="select * from likes where did='$did'";
+        $likes=$conn->query($likes1);
+        $count=0;
+        if($likes->num_rows)
+        {
+            while($likes_co=$likes->fetch_assoc())
+            {
+                $count=$likes_co['count'];
+            }
+        }
+
+        else{
+            $update="insert into likes(did,count) values(".$did.",1)";
+        $likes123=$conn->query($update);
+        if(!$likes123){
+            echo $conn->error;
+        }
+    
+}
+        
+        $update="update likes set count=".($count+1)." where did=".$did;
+        $likes123=$conn->query($update);
+        if(!$likes123){
+            echo $conn->error;
+        }
+    }
+
+}
+
+
+header("Refresh:0 ,url=posts.php");
+//header('Refresh:0; url=adminlogin.php');
 ?>

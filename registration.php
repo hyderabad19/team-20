@@ -42,10 +42,10 @@ include 'db.php';
 	                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
 	                                <input type="password" name="pass" id="pass" placeholder="Password" required>
 	                            </div>
-	                            <div class="form-group">
+	                            <!-- <div class="form-group">
 	                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
 	                                <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password" required>
-	                            </div>
+	                            </div> -->
 
 	                            <div class="form-group">
 	                                <label for="location"><i class="zmdi zmdi-pin"></i></label>
@@ -55,11 +55,12 @@ include 'db.php';
 	                            <div class="form-group">
 	                                <!-- <label for="schoolname"><i class="zmdi zmdi-home"></i></label> -->
 	                                <!-- <input type="text" name="schoolname" id="schoolname" placeholder="School Name"/> -->
-	                                     <strong>school-name  :</strong>  <select name="school">
-	                                  	<option value="Gowtham model school">Gowtham model school,hyderabad,333</option>
-									    <option value="vignan high school">vignan high school,vikarabad,444</option>
-									    <!-- <option value="fiat">Fiat</option> -->
-									    <option value="gurkul international school">gurkul international school,warangal,111</option>
+	                                     <strong>school-name  :</strong>  
+	                                     <select name="school">
+		                                  	<option value="Gowtham model school,hyderabad,333">Gowtham model school,hyderabad,333</option>
+										    <option value="vignan high school,vikarabad,444">vignan high school,vikarabad,444</option>
+										    <!-- <option value="fiat">Fiat</option> -->
+										    <option value="gurkul international school,warangal,111">gurkul international school,warangal,111</option>
 									  </select>
 	                                <!-- <ul class="dropdown-menu">
 								      <li><a href="#">Gowtham model school</a></li>
@@ -76,7 +77,7 @@ include 'db.php';
 	                </form>
                     <div class="signup-image">
                         <figure><img src="images/signup.png" alt="sing up image"></figure>
-                        <a href="login.html" class="btn btn-success">I am already member</a>
+                        <a href='Login1.php' class="btn btn-success">I am already member</a>
                     </div>
                 </div>
             </div>
